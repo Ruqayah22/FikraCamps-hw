@@ -1,3 +1,4 @@
+// done
 // Q6
 // Number of Arrays in an Array
 // Return the total number of arrays inside a given array.
