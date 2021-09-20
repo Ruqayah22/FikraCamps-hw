@@ -13,12 +13,16 @@
 function numOfSubbarrays(array) {
   let counter = 0;
   for (let i = 0; i < array.length; i++) {
-    if (array[i].length === "0")
-     counter++;
-    }
-
+      counter++;
+    // if (array[i].length === "0")
+    //  counter++;
+    // }
+  }
+//   return array.length;
   return counter;
 }
 
 console.log(numOfSubbarrays([[1, 2, 3]]));
 console.log(numOfSubbarrays([[1, 2, 3], [1, 2, 3], [1, 2, 3]]));
+console.log(numOfSubbarrays([[1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]]));
+console.log(numOfSubbarrays([1, 2, 3]));

@@ -1,3 +1,4 @@
+// done
 // Q7
 // Sum of Number Elements in an Array
 // Arrays can be mixed with various types. 
@@ -12,4 +13,18 @@
 // numbersSum([1, 2, 3, 4, 5, true]) ➞ 15
 
 
-function numbersSum(){}
+function numbersSum(array){
+    sum = 0 ;
+    for (var i=0 ; i < array.length ; i++){
+        if(Number.isFinite(array[i])){
+            sum += array[i];
+        }
+    }
+    return sum;
+
+}
+
+console.log(numbersSum([1, 2, "13", "4", "645"]));
+console.log(numbersSum([true, false, "123", "75"]));
+console.log(numbersSum([1, 2, 3, 4, 5, true]));
+
