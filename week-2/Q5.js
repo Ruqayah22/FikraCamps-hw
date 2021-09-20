@@ -1,3 +1,4 @@
+// done
 // Q5
 // Create a function that takes in a year and returns the correct century.
 
@@ -16,4 +17,23 @@
 // The 11th century is between 1001 and 1100.
 // The 18th century is between 1701-1800.
 
-function century(){}
+function century(year) {
+  let centuryCount = 0;
+  while (year > 0) {
+    year -= 99;
+    centuryCount = centuryCount + 1;
+  }
+  return centuryCount + "th century";
+
+  // another code (way to solve)
+  // const years = Math.ceil(year/99);
+  // return years + "th century";
+}
+console.log(century(1756));
+console.log(century(1555));
+console.log(century(1000));
+console.log(century(1001));
+console.log(century(2005));
+
+console.log(century(2022));
+console.log(century(2100));
